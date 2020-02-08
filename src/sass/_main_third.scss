@@ -1,69 +1,66 @@
-.container{
-    width: 1200px;
-    margin: 0 auto;
-}
 .section {
-
     &-title {
         text-transform: uppercase;
         font-size: 28px;
         font-weight: 600;
         line-height: 1.286;
-        position: relative;
-        width: 20%;
-        margin: 0 auto;
+        text-align: center;
+        margin: 0;
         margin-bottom: 70px;
         color: #1ab798;
-        font-family: $base-font;
 
+        &::before, &::after
+        {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            box-sizing: border-box;
+            width: 60px;
+            height: 2px;
+            background-color: rgb(83, 91, 100);
+            opacity: 0.4;
+        }
         &::before {
-          content: '';
-          width: 60px;
-          height: 2px;
-          background-color: rgb(83, 91, 100);
-          opacity: 0.4;
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          right: 264px;
+            margin-left: -100%;
+            margin-right: 15px;
         }
 
         &::after {
-          content: '';
-          width: 60px;
-          height: 2px;
-          background-color: rgb(83, 91, 100);
-          opacity: 0.4;
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          left: 166px;
+            margin-right: -100%;
+            margin-left: 15px;
         }
-      }
-      &-text{
-          text-align: center;
-          font-family: $base-font;
-          font-weight: 400;
-          font-size: 16px;
-          margin-bottom: 110px;
-      }
+    }
+    &-text{
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        margin-bottom: 110px;
+    }
 }
 .section-list{
     list-style: none;
     display: flex;
     padding: 0;
+    justify-content: space-between;
+    @media (min-width: 768px) and (max-width: 1199px) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    @media (max-width: 767px) {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }   
 
-    &-item {
-        width: 20%;
+    .team-item {
+        @media (max-width: 1199px) {
+            margin-bottom: 60px;
+        }
     }
     &__names{
         text-align: center;
         padding-top: 16px;
     }
-}
-
-.team-item:not(:last-child) {
-    margin-right: 40px;
 }
 
 .team-container {
@@ -116,7 +113,6 @@
     align-items: center;
     margin: 0 4px;
     background-color: rgba(16, 115, 96, 0.9);
-    
     &:hover,
     &:focus{
         background-color: rgba(56, 202, 178, 0.9);
@@ -127,13 +123,11 @@
     height: 18px;
 }
 .inner-title{
-    font-family: $base-font;
     font-weight: 700;
     color: #ffffff;
     font-size: 16px;
 }
 .inner-text{
-    font-family: $base-font;
     font-weight: 400;
     color: #ffffff;
     font-size: 16px;
@@ -145,15 +139,14 @@
 
 .section-list__name{
     margin: 0;
-    font-family: $base-font;
     font-weight: 600;
     font-size: 18px;
     color: #062033;
     padding-bottom: 12px;
 }
+
 .section-list__position{
     margin: 0;
-    font-family: $base-font;
     font-weight: 400;
     font-size: 13px;
     color: #062033;

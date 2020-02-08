@@ -1,6 +1,7 @@
 .features-section {
   text-align: center;
-
+  position: relative;
+  
   .container {
     position: relative;
     max-width: 1200px;
@@ -112,7 +113,7 @@
     &__title {
       font-size: 18px;
       font-weight: 700;
-      font-style: bold;
+      font-family: $secondary-font;
       line-height: 1;
     }
 
