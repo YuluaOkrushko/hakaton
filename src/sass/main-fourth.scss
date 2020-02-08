@@ -1,0 +1,119 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// Style block
+.main-fourth {
+  min-width: 320px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container-fourth {
+  min-width: 940px;
+  min-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 90px;
+}
+
+// Style title h2
+.fourth__title {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 620px;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #1ab798;
+  line-height: 36px;
+  border: 1px solid #000;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background-color: #babdc1;
+    top: 50%;
+    left: 5%;
+  }
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background-color: #babdc1;
+    top: 50%;
+    right: 5%;
+  }
+}
+
+.fourth-custom {
+  //   top: 25%;
+  transform: translateY(20%);
+  width: 940px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+
+  &__img {
+    margin: 0 auto;
+  }
+  &__title {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 18px;
+    //  line-height: 24px;
+    color: #062033;
+  }
+  &__subtitle {
+    color: #646464;
+    font-size: 13px;
+    margin: 0;
+  }
+}
+
+.fourth-custom__text {
+  position: relative;
+
+  p {
+    margin-top: 115px;
+    font-size: 18px;
+    line-height: 36px;
+    color: #363436;
+    position: relative;
+    z-index: 2;
+  }
+
+  //   Создаем кавычки
+  &::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: url(../images/quotes.png) no-repeat top;
+    //  Что бы кавычки влезли в заданные размеры
+    object-fit: contain;
+    top: -12px;
+    left: -18px;
+    z-index: 1;
+    //   top: 0;
+    //   left: 0;
+  }
+}
