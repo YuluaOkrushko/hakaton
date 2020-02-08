@@ -1,0 +1,39 @@
+.main-second {
+    background-image: url(../images/bg.png);
+    min-height: 447px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1145px;
+    padding: 0 25px 50px;   
+}
+.article {
+    width: 500px;
+    &__title {
+        text-transform: uppercase;
+    }
+    &__text {
+        color: white;
+    }
+    &__button--apple {                      
+        width: 73px;
+        height: 73px;
+        border: none;
+        border-radius: 50%;
+        background-color: #0098cd;
+    }
+    &__button--android {                      
+        width: 73px;
+        height: 73px;
+        border: none;
+        border-radius: 50%;
+        background-color: #0098cd;
+    }
+}
+
+
+  
+
+
