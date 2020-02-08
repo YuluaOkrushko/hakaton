@@ -1,5 +1,164 @@
-<section class="section">
-    <div class="container">
-        <h2 class="section_title">Our Team</h2>
-    </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Our Team</h2>
+            <p class="section-text">Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque. In
+                sit amet lectus non lacus sollicitudin cursus a vitae felis. Praesent luctus mi quis nisi interdum
+                eleifend.
+            </p>
+            <ul class="section-list">
+                <li class="team-item">
+                    <div class="team-container">
+                        <img src="../images/team-1.jpg" alt="team-1">
+                        <div class="inner">
+                            <h2 class="inner-title">Aenean ut suscipit urna. Donec efficitur</h2>
+                            <p class="inner-text">sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                                eos qui
+                                ratione
+                                voluptatem.</p>
+                            <ul class="team-item__socials">
+                                <li class="team-item__socials-list"><a href="#"><svg class="team-item__socials-img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 18">
+                                            <image id="twitter" width="22" height="18"
+                                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAASCAYAAABfJS4tAAAB2klEQVQ4jaWUzYuOYRSHr/f1YvLRGDWG8hU7kkKJkpVYiY38F7KRnTUbZSEfi6mJbCzMAhv+AJ+lTPJto5nxkXwkM4xLp86jx/u+zzOMX9093XWe6z7nd59zN9Qm0At8YHrNBbYCB4HtQAO4D1zKbx8wADxC7VVPqbtUatZs9YA6YqfG1CH1mnpcXRk/LFG/qA/VfWpPBXyjerULtNCU+lI9pu5sZjlzgPXASeAIsK6LKZsypkrBmp92vSqsuFM6+bN6XT2k7lCXq/PUw+qbmown1GG1X220gK/AGeAEsBhYAOzOS3oCPAZGgQ1AT03Gk8AI8DY2rbRhNTCeYNKevoRvBqay1FYNOGLeFZsCvAfor/ihNQ2wnPGLYtNMK25khv+jT8CDMngCGASu5CHOAD6Z0NdlcOgpcD6n59sMwB+By8D3dnBkOZbQWf8IjUu7BdwsV9ssBURLPUs7fgA//xL8HDhbtNlvtY3tQA5GjO5ozTAUGleP5jvyB6vZlnX08gXgXtmvCkXs6cy2Izb6cxWwCFiab8GWXMsqgGFRTNg5YCjbrEMBDsP3A3uBNcDCCmDERTsNAxezqmizroqHPrpgBbAW2JZvQlQRBwTsfV7QXeB2tma0V7WAX3xriW+ra+6EAAAAAElFTkSuQmCC" />
+                                        </svg>
+                                    </a></li>
+                                <li class="team-item__socials-list"><a href="#"><svg class="team-item__socials-img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 22">
+                                            <image id="facebook" width="11" height="22"
+                                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAWCAYAAAAW5GZjAAABFklEQVQoke3SzSrFURQF8N+9ro+UUEaKgQykpJRSRsZmioGp8g4eQnkEUw9hJBMzYSIDXaUkEvnI19Wu/a9zdfMEVp3Ov/1fe5219jm1VqulwCBWsI4ZDKOGN+w1CuIQtrCZ3yW+0FXPQnTPYbkDMdAXq1KOfeoX8RPXuMIzjhuFcn82VbjFNnbxglb18z2VyrRPOMVjVWhk4jh+JEIU5G6MYixFXmN0G1jELKYzjFQ8St8xuoNQXsBqeq4XygNYStU73AS5J9VKYhW6shUND0E+wT4mMI7eJMQEznGfVs7C82QGWctrHk5yEzvpOxqboXyBS8znCCu85qmHVaFe7LUO19xW+x3qT/yTS5SP/RsfuQLt7xs/TIZAU5vnLfsAAAAASUVORK5CYII=" />
+                                        </svg></a></li>
+                                <li class="team-item__socials-list"><a href="#"><svg class="team-item__socials-img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+                                            <image id="linkedin" width="22" height="22"
+                                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAABrklEQVQ4je2Vuy5EURSGPzODwiWhUbpUgkRELUStGK3CC4jQeAqFFxCNikZEJSSiEBIFJYVLEEMhZFxjzPyyZA07JxKO0/qTNdl7rzX/uu59KiRVA11AH/AErAGngEgCSVOSLvWFXUkdkswpfxX7OQpIDXlJY5ZJEuIUcB9JOAM8Ji2FEc8Am8AVcA4s+f41CfFHHYFOoNubt+NOEsGI64AqoNLTt0gfgIKf13tm5dKY7tl1bUCj/+ciDMjqOeIR2zoN3AFzwCHQDowCDcAb8AKsA2fAMNDjxBbEMbDhpXyyDi5KepD0Kqkg6VzSgHd3SFLOz01/K2lZ0oJPT1FSycX0J5ImJGUynlK1R4yv075OR3RWln7f10R6YKVsASatT2ZQcimjFNRTEZ3VutZv5r71COgFmgMbI89miI8DYBZYdUdZYBxoCpgG4xJb9NvAPHATTMlAhLg1FZPYxuoyIMX3uYhdXVzigksIfXNLU3GJK1x+RFziX+Of+BM2x9HbZfvwkS/ryufRD0B49mljxAvAnjuxjueBEze0F27a5hIo+lhtfUO8Alz7Cyig+A5eFkKyMb4GxwAAAABJRU5ErkJggg==" />
+                                        </svg>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="section-list__names">
+                        <p class="section-list__name">Jon Doe</p>
+                        <p class="section-list__position">Managing Director</p>
+                    </div>
+                </li>
+                <li class="team-item">
+                    <div class="team-container">
+                        <img src="../images/team-2.jpg" alt="team-1">
+                        <div class="inner">
+                            <h2 class="inner-title">Aenean ut suscipit urna. Donec efficitur</h2>
+                            <p class="inner-text">sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                                eos qui
+                                ratione
+                                voluptatem.</p>
+                            <ul class="team-item__socials">
+                                <li class="team-item__socials-list"><a href="#"><svg class="team-item__socials-img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 18">
+                                            <image id="twitter" width="22" height="18"
+                                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAASCAYAAABfJS4tAAAB2klEQVQ4jaWUzYuOYRSHr/f1YvLRGDWG8hU7kkKJkpVYiY38F7KRnTUbZSEfi6mJbCzMAhv+AJ+lTPJto5nxkXwkM4xLp86jx/u+zzOMX9093XWe6z7nd59zN9Qm0At8YHrNBbYCB4HtQAO4D1zKbx8wADxC7VVPqbtUatZs9YA6YqfG1CH1mnpcXRk/LFG/qA/VfWpPBXyjerULtNCU+lI9pu5sZjlzgPXASeAIsK6LKZsypkrBmp92vSqsuFM6+bN6XT2k7lCXq/PUw+qbmown1GG1X220gK/AGeAEsBhYAOzOS3oCPAZGgQ1AT03Gk8AI8DY2rbRhNTCeYNKevoRvBqay1FYNOGLeFZsCvAfor/ihNQ2wnPGLYtNMK25khv+jT8CDMngCGASu5CHOAD6Z0NdlcOgpcD6n59sMwB+By8D3dnBkOZbQWf8IjUu7BdwsV9ssBURLPUs7fgA//xL8HDhbtNlvtY3tQA5GjO5ozTAUGleP5jvyB6vZlnX08gXgXtmvCkXs6cy2Izb6cxWwCFiab8GWXMsqgGFRTNg5YCjbrEMBDsP3A3uBNcDCCmDERTsNAxezqmizroqHPrpgBbAW2JZvQlQRBwTsfV7QXeB2tma0V7WAX3xriW+ra+6EAAAAAElFTkSuQmCC" />
+                                        </svg>
+                                    </a></li>
+                                <li class="team-item__socials-list"><a href="#"><svg class="team-item__socials-img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 22">
+                                            <image id="facebook" width="11" height="22"
+                                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAWCAYAAAAW5GZjAAABFklEQVQoke3SzSrFURQF8N+9ro+UUEaKgQykpJRSRsZmioGp8g4eQnkEUw9hJBMzYSIDXaUkEvnI19Wu/a9zdfMEVp3Ov/1fe5219jm1VqulwCBWsI4ZDKOGN+w1CuIQtrCZ3yW+0FXPQnTPYbkDMdAXq1KOfeoX8RPXuMIzjhuFcn82VbjFNnbxglb18z2VyrRPOMVjVWhk4jh+JEIU5G6MYixFXmN0G1jELKYzjFQ8St8xuoNQXsBqeq4XygNYStU73AS5J9VKYhW6shUND0E+wT4mMI7eJMQEznGfVs7C82QGWctrHk5yEzvpOxqboXyBS8znCCu85qmHVaFe7LUO19xW+x3qT/yTS5SP/RsfuQLt7xs/TIZAU5vnLfsAAAAASUVORK5CYII=" />
+                                        </svg></a></li>
+                                <li class="team-item__socials-list"><a href="#"><svg class="team-item__socials-img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+                                            <image id="linkedin" width="22" height="22"
+                                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAABrklEQVQ4je2Vuy5EURSGPzODwiWhUbpUgkRELUStGK3CC4jQeAqFFxCNikZEJSSiEBIFJYVLEEMhZFxjzPyyZA07JxKO0/qTNdl7rzX/uu59KiRVA11AH/AErAGngEgCSVOSLvWFXUkdkswpfxX7OQpIDXlJY5ZJEuIUcB9JOAM8Ji2FEc8Am8AVcA4s+f41CfFHHYFOoNubt+NOEsGI64AqoNLTt0gfgIKf13tm5dKY7tl1bUCj/+ciDMjqOeIR2zoN3AFzwCHQDowCDcAb8AKsA2fAMNDjxBbEMbDhpXyyDi5KepD0Kqkg6VzSgHd3SFLOz01/K2lZ0oJPT1FSycX0J5ImJGUynlK1R4yv075OR3RWln7f10R6YKVsASatT2ZQcimjFNRTEZ3VutZv5r71COgFmgMbI89miI8DYBZYdUdZYBxoCpgG4xJb9NvAPHATTMlAhLg1FZPYxuoyIMX3uYhdXVzigksIfXNLU3GJK1x+RFziX+Of+BM2x9HbZfvwkS/ryufRD0B49mljxAvAnjuxjueBEze0F27a5hIo+lhtfUO8Alz7Cyig+A5eFkKyMb4GxwAAAABJRU5ErkJggg==" />
+                                        </svg>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="section-list__names">
+                        <p class="section-list__name">Jon Doe</p>
+                        <p class="section-list__position">Lead Designer</p>
+                    </div>
+                </li>
+                <li class="team-item">
+                    <div class="team-container">
+                        <img src="../images/team-3.jpg" alt="team-1">
+                        <div class="inner">
+                            <h2 class="inner-title">Aenean ut suscipit urna. Donec efficitur</h2>
+                            <p class="inner-text">sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                                eos qui
+                                ratione
+                                voluptatem.</p>
+                            <ul class="team-item__socials">
+                                <li class="team-item__socials-list"><a href="#"><svg class="team-item__socials-img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 18">
+                                            <image id="twitter" width="22" height="18"
+                                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAASCAYAAABfJS4tAAAB2klEQVQ4jaWUzYuOYRSHr/f1YvLRGDWG8hU7kkKJkpVYiY38F7KRnTUbZSEfi6mJbCzMAhv+AJ+lTPJto5nxkXwkM4xLp86jx/u+zzOMX9093XWe6z7nd59zN9Qm0At8YHrNBbYCB4HtQAO4D1zKbx8wADxC7VVPqbtUatZs9YA6YqfG1CH1mnpcXRk/LFG/qA/VfWpPBXyjerULtNCU+lI9pu5sZjlzgPXASeAIsK6LKZsypkrBmp92vSqsuFM6+bN6XT2k7lCXq/PUw+qbmown1GG1X220gK/AGeAEsBhYAOzOS3oCPAZGgQ1AT03Gk8AI8DY2rbRhNTCeYNKevoRvBqay1FYNOGLeFZsCvAfor/ihNQ2wnPGLYtNMK25khv+jT8CDMngCGASu5CHOAD6Z0NdlcOgpcD6n59sMwB+By8D3dnBkOZbQWf8IjUu7BdwsV9ssBURLPUs7fgA//xL8HDhbtNlvtY3tQA5GjO5ozTAUGleP5jvyB6vZlnX08gXgXtmvCkXs6cy2Izb6cxWwCFiab8GWXMsqgGFRTNg5YCjbrEMBDsP3A3uBNcDCCmDERTsNAxezqmizroqHPrpgBbAW2JZvQlQRBwTsfV7QXeB2tma0V7WAX3xriW+ra+6EAAAAAElFTkSuQmCC" />
+                                        </svg>
+                                    </a></li>
+                                <li class="team-item__socials-list"><a href="#"><svg class="team-item__socials-img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 22">
+                                            <image id="facebook" width="11" height="22"
+                                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAWCAYAAAAW5GZjAAABFklEQVQoke3SzSrFURQF8N+9ro+UUEaKgQykpJRSRsZmioGp8g4eQnkEUw9hJBMzYSIDXaUkEvnI19Wu/a9zdfMEVp3Ov/1fe5219jm1VqulwCBWsI4ZDKOGN+w1CuIQtrCZ3yW+0FXPQnTPYbkDMdAXq1KOfeoX8RPXuMIzjhuFcn82VbjFNnbxglb18z2VyrRPOMVjVWhk4jh+JEIU5G6MYixFXmN0G1jELKYzjFQ8St8xuoNQXsBqeq4XygNYStU73AS5J9VKYhW6shUND0E+wT4mMI7eJMQEznGfVs7C82QGWctrHk5yEzvpOxqboXyBS8znCCu85qmHVaFe7LUO19xW+x3qT/yTS5SP/RsfuQLt7xs/TIZAU5vnLfsAAAAASUVORK5CYII=" />
+                                        </svg></a></li>
+                                <li class="team-item__socials-list"><a href="#"><svg class="team-item__socials-img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+                                            <image id="linkedin" width="22" height="22"
+                                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAABrklEQVQ4je2Vuy5EURSGPzODwiWhUbpUgkRELUStGK3CC4jQeAqFFxCNikZEJSSiEBIFJYVLEEMhZFxjzPyyZA07JxKO0/qTNdl7rzX/uu59KiRVA11AH/AErAGngEgCSVOSLvWFXUkdkswpfxX7OQpIDXlJY5ZJEuIUcB9JOAM8Ji2FEc8Am8AVcA4s+f41CfFHHYFOoNubt+NOEsGI64AqoNLTt0gfgIKf13tm5dKY7tl1bUCj/+ciDMjqOeIR2zoN3AFzwCHQDowCDcAb8AKsA2fAMNDjxBbEMbDhpXyyDi5KepD0Kqkg6VzSgHd3SFLOz01/K2lZ0oJPT1FSycX0J5ImJGUynlK1R4yv075OR3RWln7f10R6YKVsASatT2ZQcimjFNRTEZ3VutZv5r71COgFmgMbI89miI8DYBZYdUdZYBxoCpgG4xJb9NvAPHATTMlAhLg1FZPYxuoyIMX3uYhdXVzigksIfXNLU3GJK1x+RFziX+Of+BM2x9HbZfvwkS/ryufRD0B49mljxAvAnjuxjueBEze0F27a5hIo+lhtfUO8Alz7Cyig+A5eFkKyMb4GxwAAAABJRU5ErkJggg==" />
+                                        </svg>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="section-list__names">
+                        <p class="section-list__name">Jon Doe</p>
+                        <p class="section-list__position">Lead Developer</p>
+                    </div>
+                </li>
+                <li class="team-item">
+                    <div class="team-container">
+                        <img src="../images/team-4.jpg" alt="team-1">
+                        <div class="inner">
+                            <h2 class="inner-title">Aenean ut suscipit urna. Donec efficitur</h2>
+                            <p class="inner-text">sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                                eos qui
+                                ratione
+                                voluptatem.</p>
+                            <ul class="team-item__socials">
+                                <li class="team-item__socials-list"><a href="#"><svg class="team-item__socials-img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 18">
+                                            <image id="twitter" width="22" height="18"
+                                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAASCAYAAABfJS4tAAAB2klEQVQ4jaWUzYuOYRSHr/f1YvLRGDWG8hU7kkKJkpVYiY38F7KRnTUbZSEfi6mJbCzMAhv+AJ+lTPJto5nxkXwkM4xLp86jx/u+zzOMX9093XWe6z7nd59zN9Qm0At8YHrNBbYCB4HtQAO4D1zKbx8wADxC7VVPqbtUatZs9YA6YqfG1CH1mnpcXRk/LFG/qA/VfWpPBXyjerULtNCU+lI9pu5sZjlzgPXASeAIsK6LKZsypkrBmp92vSqsuFM6+bN6XT2k7lCXq/PUw+qbmown1GG1X220gK/AGeAEsBhYAOzOS3oCPAZGgQ1AT03Gk8AI8DY2rbRhNTCeYNKevoRvBqay1FYNOGLeFZsCvAfor/ihNQ2wnPGLYtNMK25khv+jT8CDMngCGASu5CHOAD6Z0NdlcOgpcD6n59sMwB+By8D3dnBkOZbQWf8IjUu7BdwsV9ssBURLPUs7fgA//xL8HDhbtNlvtY3tQA5GjO5ozTAUGleP5jvyB6vZlnX08gXgXtmvCkXs6cy2Izb6cxWwCFiab8GWXMsqgGFRTNg5YCjbrEMBDsP3A3uBNcDCCmDERTsNAxezqmizroqHPrpgBbAW2JZvQlQRBwTsfV7QXeB2tma0V7WAX3xriW+ra+6EAAAAAElFTkSuQmCC" />
+                                        </svg>
+                                    </a></li>
+                                <li class="team-item__socials-list"><a href="#"><svg class="team-item__socials-img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 22">
+                                            <image id="facebook" width="11" height="22"
+                                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAWCAYAAAAW5GZjAAABFklEQVQoke3SzSrFURQF8N+9ro+UUEaKgQykpJRSRsZmioGp8g4eQnkEUw9hJBMzYSIDXaUkEvnI19Wu/a9zdfMEVp3Ov/1fe5219jm1VqulwCBWsI4ZDKOGN+w1CuIQtrCZ3yW+0FXPQnTPYbkDMdAXq1KOfeoX8RPXuMIzjhuFcn82VbjFNnbxglb18z2VyrRPOMVjVWhk4jh+JEIU5G6MYixFXmN0G1jELKYzjFQ8St8xuoNQXsBqeq4XygNYStU73AS5J9VKYhW6shUND0E+wT4mMI7eJMQEznGfVs7C82QGWctrHk5yEzvpOxqboXyBS8znCCu85qmHVaFe7LUO19xW+x3qT/yTS5SP/RsfuQLt7xs/TIZAU5vnLfsAAAAASUVORK5CYII=" />
+                                        </svg></a></li>
+                                <li class="team-item__socials-list"><a href="#"><svg class="team-item__socials-img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+                                            <image id="linkedin" width="22" height="22"
+                                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAABrklEQVQ4je2Vuy5EURSGPzODwiWhUbpUgkRELUStGK3CC4jQeAqFFxCNikZEJSSiEBIFJYVLEEMhZFxjzPyyZA07JxKO0/qTNdl7rzX/uu59KiRVA11AH/AErAGngEgCSVOSLvWFXUkdkswpfxX7OQpIDXlJY5ZJEuIUcB9JOAM8Ji2FEc8Am8AVcA4s+f41CfFHHYFOoNubt+NOEsGI64AqoNLTt0gfgIKf13tm5dKY7tl1bUCj/+ciDMjqOeIR2zoN3AFzwCHQDowCDcAb8AKsA2fAMNDjxBbEMbDhpXyyDi5KepD0Kqkg6VzSgHd3SFLOz01/K2lZ0oJPT1FSycX0J5ImJGUynlK1R4yv075OR3RWln7f10R6YKVsASatT2ZQcimjFNRTEZ3VutZv5r71COgFmgMbI89miI8DYBZYdUdZYBxoCpgG4xJb9NvAPHATTMlAhLg1FZPYxuoyIMX3uYhdXVzigksIfXNLU3GJK1x+RFziX+Of+BM2x9HbZfvwkS/ryufRD0B49mljxAvAnjuxjueBEze0F27a5hIo+lhtfUO8Alz7Cyig+A5eFkKyMb4GxwAAAABJRU5ErkJggg==" />
+                                        </svg>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="section-list__names">
+                        <p class="section-list__name">Jon Doe</p>
+                        <p class="section-list__position">Sr. UI Designer</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>
