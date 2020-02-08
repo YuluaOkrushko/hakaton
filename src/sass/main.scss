@@ -2,7 +2,15 @@
  * Все паршалы импортировать в этот файл
  */
 
-@import 'normalize.scss';
-@import 'base.scss';
 
-@import 'header.scss';
+@import './normalize.scss';
+@import './base.scss';
+@import './_fonts';
+@import './_variables';
+@import './header';
+@import './main-first';
+@import './main-second';
+@import './main_third';
+@import './main-fourth';
+@import './footer';
+>>>>>>> master
