@@ -1,6 +1,14 @@
 .container {
   width: 1200px;
   margin: 0 auto;
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    width: 708px;
+  }
+
+  @media (max-width: 767px) {
+    width: 292px;
+  }
 }
 
 .link {
@@ -18,12 +26,41 @@
 
 .header {
   max-width: 100%;
-  padding-top: 28px;
+  padding: 28px 0 170px;
   margin-bottom: 46px;
   background-image: url('../images/background-header.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
+
+  &::after {
+    content: '';
+    background-image: url(../images/iphone6s.png);
+    position: absolute;
+    width: 452px;
+    height: 664px;
+    top: 218px;
+    right: 112px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    &::after {
+      top: 406px;
+      right: 100px;
+      width: 304px;
+      height: 446px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .header__nav {
@@ -41,14 +78,21 @@
 }
 
 .header__logo {
+  font-weight: bold;
   font-size: 30px;
   line-height: 36px;
   margin: 0;
+
+  & a:hover,
+  & a:focus {
+    color: orange;
+  }
+
+  &-link {
+    color: #29bc9f;
+  }
 }
 
-.header__logo-link {
-  color: #29bc9f;
-}
 
 .header__navigation {
   min-width: 454px;
@@ -57,6 +101,7 @@
   text-transform: uppercase;
 
   & a {
+    font-weight: bold;
     color: #969596;
   }
 
@@ -81,11 +126,29 @@
   padding-bottom: 36px;
 }
 
-.header_text {
+.header__text {
   font-size: 16px;
   line-height: 36px;
   list-style: none;
   color: #ffffff;
+  margin-bottom: 70px;
+  padding-left: 20px;
+}
+
+.header__link {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    transform: rotate(-45deg);
+    top: 50%;
+    left: -20px;
+  }
 }
 
 .header__button {
@@ -97,6 +160,12 @@
   background-color: #29bc9f;
   color: #ffffff;
   padding: 12px 38px 12px 22px;
+  margin-left: 20px;
+
+  &:hover,
+  &:focus {
+    background-color: orange;
+  }
 }
 
 .header__button-icon {
@@ -104,4 +173,46 @@
   width: 36px;
   height: 24px;
   margin-right: 20px;
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding-bottom: 105px;
+  }
+
+  .header__logo {
+    font-size: 22px;
+  }
+
+  .header__navigation {
+    display: none;
+  }
+
+  .header__title {
+    font-size: 25px;
+  }
+
+  .header__title_second {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .header__nav {
+    margin-bottom: 86px;
+  }
+
+  .header__text {
+    font-size: 12px;
+    margin-bottom: 22px;
+  }
+
+  .header__title_second {
+    padding-bottom: 18px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .header__navigation {
+    font-size: 12px;
+  }
 }
