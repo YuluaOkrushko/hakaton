@@ -1,0 +1,111 @@
+.features-section {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+    &-title {
+        text-transform: uppercase;
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 1.286;
+        position: relative;
+        width: 20%;
+        margin: 0 auto;
+        margin-bottom: 90px;
+
+
+        &::before {
+            content: '';
+            width: 60px;
+            height: 2px;
+            background-color: rgb(83, 91, 100);
+            opacity: 0.4;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 230px;
+        }
+
+        &::after {
+            content: '';
+            width: 60px;
+            height: 2px;
+            background-color: rgb(83, 91, 100);
+            opacity: 0.4;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left:230px
+        }
+    }
+
+        &-sub-title {
+            font-size: 18px;
+            text-align: center;
+            line-height: 2;
+            margin-bottom: 100px;
+        }
+
+
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            position: relative;
+            padding-left: 0;
+            margin-top: 0;
+
+            &__item {
+                width: 300px;
+                margin-bottom: 80px;
+                position: relative;
+
+                &::before {
+                    content: url(../images/icon-board.svg);
+                    position: absolute;
+                    bottom: 100px;
+                    left: -65px;
+                    width: 30px;
+                    height: 28px;
+                }
+            }
+
+            &__item:nth-child(2n+1) {
+                margin-right: 540px;
+                margin-left: 60px;
+            }
+
+            &__item:nth-child(3n) {
+                margin-bottom: 0;
+            }
+
+            &__title,
+            &__text {
+                text-align: left;
+            }
+
+            &__title {
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 1;
+            }
+
+            &__text {
+                font-size: 13px;
+                line-height: 1.846;
+            }
+        }
+
+        &__picture {
+            position: absolute;
+            display: block;
+            width: 418px;
+            height: 662px;
+            left: 570px;
+            top: 320px;
+        }
+}
