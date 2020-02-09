@@ -1,7 +1,5 @@
 .footer {
-  display: flex;
-  flex-flow: column wrap;
-  max-width: 100%;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -9,10 +7,22 @@
   background-image: url(../images/footer_bg_img.png);
 }
 
+.form-wrap {
+  display: flex;
+}
+
 a {
   display: block;
   text-decoration: none;
 }
+
+
+
+.li-item {
+  list-style: none;
+  display: inline-flex;
+}
+
 
 .contact-title {
   margin: 0 auto;
@@ -84,6 +94,12 @@ a {
   &:first-child {
     margin-left: 0;
   }
+
+  &:hover {
+    transition: 0.2s;
+    color: #ffffff;
+    opacity: 0.5;
+  }
 }
 
 .socials-navigation__email-phone {
@@ -148,6 +164,12 @@ a {
   cursor: pointer;
   display: block;
   margin-left: 400px;
+
+  &:hover {
+    transition: 0.2s;
+    color: #ffffff;
+    background-color: #008190;
+  }
 }
 
 .footer-info {
@@ -160,19 +182,16 @@ a {
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
+
+
   footer {
     display: flex;
     height: auto;
   }
 
-  .container {
-    margin: 0 auto;
-    width: 100%;
-    flex-flow: column-reverse;
-    align-items: center;
-  }
 
   .contact-form-wrap {
+    display: block;
     padding: 0;
     justify-content: space-between;
     align-items: center;
@@ -180,6 +199,12 @@ a {
 
   .socials-navigation__item-icon {
     margin: 0 10px;
+
+    &:hover {
+      transition: 0.2s;
+      color: #ffffff;
+      opacity: 0.5;
+    }
   }
 
   .input-area-wrap {
@@ -205,6 +230,12 @@ a {
   .form-button {
     margin: 0 auto;
     justify-content: center;
+
+    &:hover {
+      transition: 0.2s;
+      color: #ffffff;
+      background-color: #008190;
+    }
   }
 
   .contact-form-wrap {
@@ -223,25 +254,28 @@ a {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+
+
   footer {
     display: flex;
     height: auto;
   }
 
-  .container {
-    margin: 0 auto;
-    width: 100%;
-    flex-flow: column-reverse;
-    align-items: center;
-  }
 
   .contact-form-wrap {
+    display: block;
     padding: 0;
     align-items: center;
   }
 
   .socials-navigation__item-icon {
     margin: 0 2px;
+
+    &:hover {
+      transition: 0.2s;
+      color: #ffffff;
+      opacity: 0.5;
+    }
   }
 
   .input-area-wrap {
@@ -268,6 +302,14 @@ a {
   .form-button {
     margin: 0 auto;
     justify-content: center;
+    background-color: #31d4e7;
+    color: #ffffff;
+
+    &:hover {
+      transition: 0.2s;
+      color: #ffffff;
+      background-color: #008190;
+    }
   }
 
   .contact-form-wrap {
