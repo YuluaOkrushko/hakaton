@@ -1,18 +1,14 @@
-.container {
-  width: 1200px;
-  margin: auto;
-  display: flex;
-}
-
 .footer {
-  display: flex;
-  flex-flow: column wrap;
-  max-width: 100%;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
   background-image: url(../images/footer_bg_img.png);
+}
+
+.form-wrap {
+  display: flex;
 }
 
 a {
@@ -186,19 +182,8 @@ a {
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
-  footer {
-    display: flex;
-    height: auto;
-  }
-
-  .container {
-    margin: 0 auto;
-    width: 100%;
-    flex-flow: column-reverse;
-    align-items: center;
-  }
-
   .contact-form-wrap {
+    display: block;
     padding: 0;
     justify-content: space-between;
     align-items: center;
@@ -261,19 +246,8 @@ a {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  footer {
-    display: flex;
-    height: auto;
-  }
-
-  .container {
-    margin: 0 auto;
-    width: 100%;
-    flex-flow: column-reverse;
-    align-items: center;
-  }
-
   .contact-form-wrap {
+    display: block;
     padding: 0;
     align-items: center;
   }
