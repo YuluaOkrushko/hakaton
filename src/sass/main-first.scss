@@ -136,6 +136,10 @@
     display: none;
   }
 
+  .features-section {
+    margin-bottom: 0;
+  }
+
   .features-section-title {
     margin-bottom: 65px;
     width: 100%;
@@ -170,13 +174,15 @@
     }
 
     &::before {
-      bottom: 145px;
+      bottom: 122px;
     }
   }
 }
 
 @media screen and (max-width: 767px) {
   .features-section {
+    margin-bottom: 30px;
+
     .container {
       max-width: 292px;
       width: 100%;
@@ -197,11 +203,11 @@
     }
   }
 
-  .features-section-sub-title {
+  .section-text {
     width: 100%;
     margin-bottom: 30px;
     font-size: 16px;
-    line-height: 1.625;
+    line-height: 27px;
   }
 
   .features-section-list {
