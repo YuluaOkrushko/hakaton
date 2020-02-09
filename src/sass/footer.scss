@@ -16,16 +16,14 @@ a {
   text-decoration: none;
 }
 
-
-
 .li-item {
   list-style: none;
   display: inline-flex;
   margin: 0 8px;
 }
 
-
 .contact-title {
+  width: 180px;
   margin: 0 auto;
   font-family: $secondary-font;
   font-size: 24px;
@@ -46,7 +44,7 @@ a {
     position: absolute;
     top: 48%;
     transform: translateY(-50%);
-    right: 435px;
+    right: 180px;
   }
 
   &::after {
@@ -57,7 +55,7 @@ a {
     position: absolute;
     top: 48%;
     transform: translateY(-50%);
-    left: 435px;
+    left: 180px;
   }
 }
 
@@ -176,18 +174,15 @@ a {
   color: #8c8c8c;
   padding-left: 30px;
   border-top: 1px solid #8c8c8c;
-  line-height: 3.0;
+  line-height: 3;
   font-size: 14px;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
-
-
   footer {
     display: flex;
     height: auto;
   }
-
 
   .contact-form-wrap {
     display: block;
@@ -255,14 +250,11 @@ a {
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
-
-
+@media (max-width: 767px) {
   footer {
     display: flex;
     height: auto;
   }
-
 
   .contact-form-wrap {
     display: block;
@@ -275,12 +267,12 @@ a {
 
     &::before {
       top: 46%;
-      right: 215px;
+      right: 158px;
     }
 
     &::after {
       top: 46%;
-      left: 215px;
+      left: 158px;
     }
   }
 

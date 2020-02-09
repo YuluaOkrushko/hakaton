@@ -23,15 +23,18 @@ body {
 .container {
   width: 1200px;
   max-width: 100%;
+  padding: 0 50px;
   margin: 0 auto;
   font-family: $base-font;
   overflow-x: hidden;
 
   @media (min-width: 768px) and (max-width: 1199px) {
     width: 708px;
+    padding: 0;
   }
 
   @media (max-width: 767px) {
     width: 292px;
+    padding: 0;
   }
 }
