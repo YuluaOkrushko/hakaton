@@ -127,6 +127,7 @@
     flex-shrink: 0;
     background-color: transparent;
     cursor: pointer;
+    outline: none;
 
     &::after {
       content: '';
