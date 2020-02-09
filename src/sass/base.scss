@@ -13,6 +13,13 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+body {
+  &.is-unsrollable {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
 .container {
   width: 1200px;
   max-width: 100%;
