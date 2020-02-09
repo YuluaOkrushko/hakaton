@@ -101,6 +101,20 @@
   }
 }
 
+.btn__navicon {
+  display: none;
+  background: url('../images/burger.png');
+  width: 28px;
+  height: 19px;
+  border: none;
+  cursor: pointer;
+  margin-top: 6px;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+
 .header__title {
   color: #ffffff;
   font-size: 42px;
