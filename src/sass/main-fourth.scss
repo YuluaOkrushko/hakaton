@@ -16,17 +16,11 @@ img {
 
 // Style block
 .main-fourth {
-  min-width: 320px;
-  max-width: 1200px;
-  margin: 0 auto;
   text-align: center;
-  padding-bottom: 130px;
 }
 
 .container-fourth {
-  height: auto;
-  margin: 0 auto;
-  text-align: center;
+  padding-bottom: 130px;
 }
 
 // Style title h2
@@ -66,11 +60,6 @@ img {
 }
 
 .fourth-custom {
-  width: 940px;
-  margin: 60px auto 0;
-  text-align: center;
-  padding: 0;
-
   &__img {
     margin: 0 auto;
   }
@@ -79,16 +68,21 @@ img {
     margin-bottom: 0;
     font-size: 18px;
     color: #062033;
+    font-weight: 600;
   }
   &__subtitle {
     color: #646464;
     font-size: 13px;
     margin: 0;
+    font-weight: 600;
   }
 }
 
 .fourth-custom__text {
   position: relative;
+  width: 1095px;
+  max-width: 100%;
+  padding-left: 150px;
 
   p {
     //  margin-top: 115px;
@@ -111,7 +105,7 @@ img {
     //  Что бы кавычки влезли в заданные размеры
     object-fit: contain;
     top: -12px;
-    left: -38px;
+    left: 100px;
     z-index: 1;
   }
 }
@@ -153,11 +147,6 @@ img {
 
 // Style desktop
 @media (min-width: 1200px) {
-  .container-fourth {
-    padding: 0 90px;
-    min-width: 940px;
-  }
-
   .fourth__title {
     width: 620px;
     font-size: 28px;
@@ -178,15 +167,6 @@ img {
     padding-bottom: 180px;
   }
 
-  .container-fourth {
-    min-width: 600px;
-    padding: 0 30px;
-  }
-
-  .fourth-custom {
-    width: 600px;
-  }
-
   .fourth-custom__text {
     p {
       margin-top: 65px;
@@ -200,12 +180,6 @@ img {
 
 // style mobile
 @media (min-width: 320px) and (max-width: 767px) {
-  .container-fourth {
-    width: auto;
-    //  margin: 0 auto;
-    padding: 0 40px;
-  }
-
   //   Style title h2
   .fourth__title {
     width: 200px;
