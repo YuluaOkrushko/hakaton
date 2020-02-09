@@ -10,7 +10,7 @@
 }
 
 .container-fourth {
-  padding-bottom: 130px;
+  padding-bottom: 180px;
 }
 
 // Style title h2
@@ -23,8 +23,9 @@
   font-size: 28px;
   text-transform: uppercase;
   color: #1ab798;
-  //   line-height: 36px;
-  //   border: 1px solid #000;
+  width: 620px;
+  font-size: 28px;
+  line-height: 36px;
   position: relative;
 
   &::before {
@@ -37,6 +38,7 @@
     top: 50%;
     left: 5%;
   }
+
   &::after {
     content: '';
     display: block;
@@ -50,9 +52,15 @@
 }
 
 .fourth-custom {
+  margin-top: 65px;
+
   &__img {
     margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
+
   &__title {
     margin-top: 30px;
     margin-bottom: 0;
@@ -60,6 +68,7 @@
     color: #062033;
     font-weight: 600;
   }
+
   &__subtitle {
     color: #646464;
     font-size: 13px;
@@ -75,7 +84,7 @@
   padding-left: 150px;
 
   p {
-    //  margin-top: 115px;
+    margin-top: 115px;
     margin-bottom: 0;
     font-size: 18px;
     line-height: 36px;
@@ -135,31 +144,33 @@
   }
 }
 
-// Style desktop
-@media (min-width: 1200px) {
-  .fourth__title {
-    width: 620px;
-    font-size: 28px;
-    line-height: 36px;
-  }
-
-  .fourth-custom__text {
-    p {
-      margin-top: 115px;
-    }
-  }
-}
-
 // Style tablet
 @media (min-width: 768px) and (max-width: 1199px) {
-  .main-fourth {
-    //  min-width: 600px;
-    padding-bottom: 180px;
+  .container-fourth {
+    padding-bottom: 140px;
   }
 
-  .fourth-custom__text {
-    p {
-      margin-top: 65px;
+  // .main-fourth {
+  //   padding-bottom: 105px;
+  // }
+
+  .fourth-custom {
+    margin-top: 65px;
+
+    &__text {
+      padding-left: 90px;
+
+      p {
+        width: 570px;
+        max-width: 100%;
+        margin-top: 65px;
+      }
+      //   Создаем кавычки
+      &::before {
+        content: '';
+        top: -12px;
+        left: 60px;
+      }
     }
   }
 
@@ -169,7 +180,15 @@
 }
 
 // style mobile
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
+  .container-fourth {
+    padding-bottom: 100px;
+  }
+
+  // .main-fourth {
+  //   padding-bottom: 105px;
+  // }
+
   //   Style title h2
   .fourth__title {
     width: 200px;
@@ -190,6 +209,7 @@
       top: 24%;
       left: -15%;
     }
+
     &::after {
       content: '';
       display: block;
@@ -207,8 +227,24 @@
     max-width: 100%;
   }
 
-  .fourth-custom__text p {
-    margin-top: 25px;
-    font-size: 16px;
+  .fourth-custom__text {
+    padding-left: 35px;
+
+    p {
+      width: 255px;
+      max-width: 100%;
+      margin-top: 25px;
+      font-size: 16px;
+    }
+    //   Создаем кавычки
+    &::before {
+      content: '';
+      top: -12px;
+      left: 5px;
+    }
+  }
+
+  .fourth-btn {
+    bottom: -30px;
   }
 }
