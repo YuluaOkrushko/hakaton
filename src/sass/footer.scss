@@ -20,7 +20,7 @@ a {
   text-decoration: none;
 }
 
-li {
+.li-item {
   list-style: none;
   display: inline-flex;
 }
@@ -95,6 +95,12 @@ li {
   &:first-child {
     margin-left: 0;
   }
+
+  &:hover {
+    transition: 0.2s;
+    color: #ffffff;
+    opacity: 0.5;
+  }
 }
 
 .socials-navigation__email-phone {
@@ -162,6 +168,12 @@ li {
   cursor: pointer;
   display: block;
   margin-left: 400px;
+
+  &:hover {
+    transition: 0.2s;
+    color: #ffffff;
+    background-color: #008190;
+  }
 }
 
 .footer-info {
@@ -194,6 +206,12 @@ li {
 
   .socials-navigation__item-icon {
     margin: 0 10px;
+
+    &:hover {
+      transition: 0.2s;
+      color: #ffffff;
+      opacity: 0.5;
+    }
   }
 
   .input-area-wrap {
@@ -219,6 +237,12 @@ li {
   .form-button {
     margin: 0 auto;
     justify-content: center;
+
+    &:hover {
+      transition: 0.2s;
+      color: #ffffff;
+      background-color: #008190;
+    }
   }
 
   .contact-form-wrap {
@@ -256,6 +280,12 @@ li {
 
   .socials-navigation__item-icon {
     margin: 0 2px;
+
+    &:hover {
+      transition: 0.2s;
+      color: #ffffff;
+      opacity: 0.5;
+    }
   }
 
   .input-area-wrap {
@@ -282,6 +312,14 @@ li {
   .form-button {
     margin: 0 auto;
     justify-content: center;
+    background-color: #31d4e7;
+    color: #ffffff;
+
+    &:hover {
+      transition: 0.2s;
+      color: #ffffff;
+      background-color: #008190;
+    }
   }
 
   .contact-form-wrap {
