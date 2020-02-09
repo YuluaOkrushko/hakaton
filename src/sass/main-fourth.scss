@@ -1,0 +1,251 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// Style block
+.main-fourth {
+  min-width: 320px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 130px;
+}
+
+.container-fourth {
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+// Style title h2
+.fourth__title {
+  font-family: $secondary-font;
+  font-weight: 900;
+  margin: 0 auto;
+  margin-top: 20px;
+  max-width: 620px;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #1ab798;
+  //   line-height: 36px;
+  //   border: 1px solid #000;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background-color: #babdc1;
+    top: 50%;
+    left: 5%;
+  }
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background-color: #babdc1;
+    top: 50%;
+    right: 5%;
+  }
+}
+
+.fourth-custom {
+  width: 940px;
+  margin: 60px auto 0;
+  text-align: center;
+  padding: 0;
+
+  &__img {
+    margin: 0 auto;
+  }
+  &__title {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 18px;
+    color: #062033;
+    font-weight: 600;
+  }
+  &__subtitle {
+    color: #646464;
+    font-size: 13px;
+    margin: 0;
+    font-weight: 600;
+  }
+}
+
+.fourth-custom__text {
+  position: relative;
+
+  p {
+    //  margin-top: 115px;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 36px;
+    color: #363436;
+    position: relative;
+    z-index: 2;
+  }
+
+  //   Создаем кавычки
+  &::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: url(../images/quotes.png) no-repeat top;
+    //  Что бы кавычки влезли в заданные размеры
+    object-fit: contain;
+    top: -12px;
+    left: -38px;
+    z-index: 1;
+  }
+}
+
+// Style gallery-btn
+.fourth-btn {
+  display: inline-flex;
+  margin: 0 auto;
+  height: 15px;
+  position: relative;
+  border: none;
+  bottom: -50px;
+  // Create circle
+  &__circle {
+    display: block;
+    border: none;
+    width: 18px;
+    height: 18px;
+    padding: 4px;
+    flex-shrink: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      display: block;
+      border-radius: 50%;
+      border: none;
+      width: 10px;
+      height: 10px;
+      background-color: #d4d3d4;
+    }
+
+    &:hover::after {
+      background-color: #1ab798;
+    }
+  }
+}
+
+// Style desktop
+@media (min-width: 1200px) {
+  .container-fourth {
+    padding: 0 90px;
+    min-width: 940px;
+  }
+
+  .fourth__title {
+    width: 620px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .fourth-custom__text {
+    p {
+      margin-top: 115px;
+    }
+  }
+}
+
+// Style tablet
+@media (min-width: 768px) and (max-width: 1199px) {
+  .main-fourth {
+    //  min-width: 600px;
+    padding-bottom: 180px;
+  }
+
+  .container-fourth {
+    min-width: 600px;
+    padding: 0 30px;
+  }
+
+  .fourth-custom {
+    width: 600px;
+  }
+
+  .fourth-custom__text {
+    p {
+      margin-top: 65px;
+    }
+  }
+
+  .fourth-btn {
+    bottom: -60px;
+  }
+}
+
+// style mobile
+@media (min-width: 320px) and (max-width: 767px) {
+  .container-fourth {
+    width: auto;
+    //  margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  //   Style title h2
+  .fourth__title {
+    width: 200px;
+    //  max-width: 100%;
+    word-wrap: break-word;
+    font-size: 18px;
+    line-height: 35px;
+    //  wwww
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      // width: 60px;
+      // height: 2px;
+      // background-color: #babdc1;
+      top: 24%;
+      left: -15%;
+    }
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      // width: 60px;
+      // height: 2px;
+      // background-color: #babdc1;
+      top: 24%;
+      right: -15%;
+    }
+  }
+
+  .fourth-custom {
+    min-width: 260px;
+    max-width: 100%;
+  }
+
+  .fourth-custom__text p {
+    margin-top: 25px;
+    font-size: 16px;
+  }
+}
