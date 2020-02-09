@@ -1,6 +1,7 @@
 .features-section {
   text-align: center;
   position: relative;
+  margin-bottom: 96px;
 
   &-title {
     text-transform: uppercase;
@@ -61,7 +62,10 @@
       position: relative;
 
       &::before {
-        content: url(../images/icon-board.png);
+        content: '';
+        background-image: url(../images/icon_board.png);
+        background-repeat: no-repeat;
+        background-size: contain;
         position: absolute;
         bottom: 120px;
         left: 0;
@@ -70,28 +74,28 @@
       }
 
       &--second::before {
-        content: url(../images/icon-star.svg);
+        background-image: url(../images/icon-star.svg);
       }
 
       &--third::before {
-        content: url(../images/icon-hub.svg);
+        background-image: url(../images/icon-hub.svg);
       }
 
       &--fourth::before {
-        content: url(../images/icon-bell.svg);
+        background-image: url(../images/icon-bell.svg);
       }
 
       &--fifth::before {
-        content: url(../images/icon-thumb.svg);
+        background-image: url(../images/icon-thumb.svg);
       }
 
       &--sixth::before {
-        content: url(../images/icon-share.svg);
+        background-image: url(../images/icon-share.svg);
       }
     }
 
     &__item:nth-child(2n + 1) {
-      margin-right: 480px;
+      margin-right: 600px;
     }
 
     &__item:nth-child(n + 5) {
@@ -172,6 +176,14 @@
 }
 
 @media screen and (max-width: 767px) {
+  .features-section {
+    .container {
+      max-width: 292px;
+      width: 100%;
+      padding: 0;
+    }
+  }
+
   .features-section-title {
     margin-bottom: 35px;
     width: 100%;
