@@ -20,10 +20,11 @@
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+  margin-bottom: 116px;
 
   &::after {
     content: '';
-    background-image: url(../images/iphone6s.png);
+    background-image: url('../images/iphone6s.png');
     position: absolute;
     width: 452px;
     height: 664px;
@@ -57,6 +58,14 @@
   padding: 26px 24px 20px 48px;
   background-color: #ffffff;
   margin-bottom: 170px;
+
+  @media (max-width: 767px) {
+    height: 82px;
+
+    .container {
+      overflow: visible;
+    }
+  }
 }
 
 .flex {
@@ -76,13 +85,21 @@
     color: orange;
   }
 
+  @media (max-width: 767px) {
+    & a:hover,
+    & a:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px #ccc;
+      border-radius: 4px;
+    }
+  }
+
   &-link {
     color: #29bc9f;
     font-family: $secondary-font;
     font-weight: 600;
   }
 }
-
 
 .header__navigation {
   min-width: 454px;
@@ -99,19 +116,19 @@
   & a:focus {
     color: #282528;
   }
-}
-
-.btn__navicon {
-  display: none;
-  background: url('../images/burger.png');
-  width: 28px;
-  height: 19px;
-  border: none;
-  cursor: pointer;
-  margin-top: 6px;
 
   @media (max-width: 767px) {
     display: block;
+    position: fixed;
+    top: 110px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    min-width: 292px;
   }
 }
 
@@ -193,10 +210,6 @@
     font-size: 22px;
   }
 
-  .header__navigation {
-    display: none;
-  }
-
   .header__title {
     font-size: 25px;
   }
@@ -223,5 +236,70 @@
 @media (min-width: 768px) and (max-width: 1199px) {
   .header__navigation {
     font-size: 12px;
+  }
+}
+
+.btn-burger {
+  display: none;
+
+  @media (max-width: 767px) {
+    display: block;
+    position: relative;
+    right: -5px;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    border-radius: 4px;
+    border: none;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px #ccc;
+    }
+  }
+
+  &__line {
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    left: 5px;
+    background-color: #000;
+    transition: all 0.3s linear;
+
+    &:nth-child(1) {
+      top: 5px;
+    }
+
+    &:nth-child(2) {
+      top: 13px;
+    }
+
+    &:nth-child(3) {
+      top: 22px;
+    }
+  }
+}
+
+.header__nav.is-active {
+  @media (max-width: 767px) {
+    .btn-burger__line {
+      &:nth-child(1) {
+        top: 13px;
+        transform: rotate(45deg);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        top: 14px;
+        transform: rotate(-45deg);
+      }
+    }
+
+    .header__navigation {
+      transform: translateX(0);
+    }
   }
 }
