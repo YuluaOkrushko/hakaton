@@ -18,6 +18,13 @@
     @media (max-width: 1199px) {
       width: 500px;
     }
+
+    @media (max-width: 767px) {
+      width: 285px;
+      height: auto;
+    }
+    
+    
   }
 }
 .article {
@@ -74,7 +81,6 @@
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .main-second {
-    // padding: 105px 0;
     margin-bottom: 100px;
 
     .container {
@@ -114,12 +120,14 @@
   .main-second {
     padding: 60px 15px;
     margin-bottom: 56px;
+
+    .container {
+      display: block;
+      width: 292px;
+      padding: 0;
+    }
   }
-  .container {
-    display: block;
-    width: 292px;
-    padding: 0;
-  }
+  
   .article {
     display: block;
     width: 292px;
@@ -137,10 +145,14 @@
     &__list {
       display: flex;
       justify-content: space-between;
-      padding: 0;
-      margin: 0 auto 60px;
+      padding: 0 0 40px;
+      margin: 0 auto;
       width: 156px;
       list-style: none;
+    }
+
+    &:nth-child(2) {
+      padding-left: 0;
     }
   }
 }
