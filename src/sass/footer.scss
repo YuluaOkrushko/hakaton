@@ -19,6 +19,7 @@ a {
 .li-item {
   list-style: none;
   display: inline-flex;
+  margin: 0 8px;
 }
 
 .contact-title {
@@ -42,7 +43,7 @@ a {
     position: absolute;
     top: 48%;
     transform: translateY(-50%);
-    right: 180px;
+    right: 435px;
   }
 
   &::after {
@@ -53,7 +54,7 @@ a {
     position: absolute;
     top: 48%;
     transform: translateY(-50%);
-    left: 180px;
+    left: 435px;
   }
 }
 
@@ -62,6 +63,10 @@ a {
   flex-direction: column;
   height: auto;
   padding-right: 100px;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 }
 
 .contact-second__title {
@@ -86,12 +91,6 @@ a {
 }
 
 .socials-navigation__item-icon {
-  margin: 8px;
-
-  &:first-child {
-    margin-left: 0;
-  }
-
   &:hover {
     transition: 0.2s;
     color: #ffffff;
@@ -121,7 +120,7 @@ a {
 }
 
 .user-form {
-  width: 100%;
+  width: 570px;
   flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
@@ -129,7 +128,7 @@ a {
 
 .input-data {
   margin-bottom: 30px;
-  width: 48%;
+  width: 270px;
   height: 45px;
   border: 1px solid #8c8c8c;
   border-radius: 2px;
@@ -138,7 +137,7 @@ a {
 }
 
 .input-textarea {
-  width: 100%;
+  width: 570px;
   height: 180px;
   border: 1px solid #8c8c8c;
 }
@@ -189,9 +188,12 @@ a {
     align-items: center;
   }
 
-  .socials-navigation__item-icon {
-    margin: 0 10px;
+  .form-wrap {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
 
+  .socials-navigation__item-icon {
     &:hover {
       transition: 0.2s;
       color: #ffffff;
@@ -200,17 +202,17 @@ a {
   }
 
   .input-area-wrap {
-    width: 45%;
+    width: 100%;
     padding: 0;
     align-items: center;
     justify-content: space-between;
   }
 
   .user-form {
-    width: 100%;
+    width: 570px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin: 0 auto;
     margin-bottom: 40px;
   }
 
@@ -252,8 +254,32 @@ a {
     align-items: center;
   }
 
+  .contact-title {
+    font-size: 18px;
+
+    &::before {
+      top: 46%;
+      right: 215px;
+    }
+
+    &::after {
+      top: 46%;
+      left: 215px;
+    }
+  }
+
+  .form-wrap {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .socials-navigation {
+    width: 100%;
+  }
+
   .socials-navigation__item-icon {
-    margin: 0 2px;
+    margin: 0;
 
     &:hover {
       transition: 0.2s;
@@ -263,7 +289,7 @@ a {
   }
 
   .input-area-wrap {
-    width: 45%;
+    width: 100%;
     padding: 0;
     align-items: center;
   }
@@ -298,6 +324,7 @@ a {
 
   .contact-form-wrap {
     text-align: center;
+    margin: 0 auto;
   }
 
   .socials-navigation__email-phone {
