@@ -90,7 +90,11 @@ li {
 }
 
 .socials-navigation__item-icon {
-  margin-right: 17px;
+  margin: 8px;
+
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
 .socials-navigation__email-phone {
