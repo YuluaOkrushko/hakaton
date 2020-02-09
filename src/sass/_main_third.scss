@@ -1,11 +1,11 @@
 .section {
-    margin-bottom: 118px;
+    padding-bottom: 118px;
     @media (min-width: 768px) and (max-width: 1199px) {
-        margin-bottom: 0px;
+        padding-bottom: 0px;
     }
     @media (max-width: 767px) {
-        margin-bottom: 0px;
-    }   
+        padding-bottom: 0px;
+    }
     &-title {
         text-transform: uppercase;
         font-size: 28px;
@@ -39,9 +39,18 @@
     }
     &-text{
         text-align: center;
-        font-weight: 400;
+        font-weight: 600;
+        line-height: 1.5;
         font-size: 16px;
         margin-bottom: 110px;
+        @media (min-width: 768px) and (max-width: 1199px) {
+            font-weight: 700;
+            line-height: 1.5;
+        }
+        @media (max-width: 767px) {
+            font-weight: 700;
+            line-height: 1.625;
+        }
     }
 }
 .section-list{
@@ -57,7 +66,7 @@
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
-    }   
+    }
 
     .team-item {
         @media (max-width: 1199px) {

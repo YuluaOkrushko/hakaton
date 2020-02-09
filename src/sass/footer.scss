@@ -16,14 +16,17 @@ a {
   text-decoration: none;
 }
 
+
+
 .li-item {
   list-style: none;
   display: inline-flex;
 }
 
+
 .contact-title {
   margin: 0 auto;
-  font-family: 'Raleway', sans-serif;
+  font-family: $secondary-font;
   font-size: 24px;
   align-items: center;
   flex-direction: column;
@@ -107,7 +110,6 @@ a {
 }
 
 .socials-navigation__email-phone-item {
-  font-family: 'OpenSans', sans-serif;
   font-weight: 700;
   font-size: 14px;
   color: #bface2;
@@ -146,7 +148,6 @@ a {
 .input-data__text-style {
   font-size: 16px;
   line-height: 1;
-  font-family: 'OpenSans', sans-serif;
   padding: 14px 16px;
   font-weight: 300;
 }
@@ -155,7 +156,6 @@ a {
   width: 100%;
   width: 174px;
   height: 54px;
-  font-family: 'OpenSans', sans-serif;
   font-size: 22px;
   font-weight: 400;
   background-color: #31d4e7;
